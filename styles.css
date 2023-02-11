@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Lato', sans-serif;
+}
+html {
+    background: #F3EED9;
+    
+}
+
+img {
+    max-width: 100%
+}
+code {
+    font-size: .9rem;
+    color: #C1121F;
+}
+
+.main {
+    padding: 0 .3rem;
+    
+}
+
+.intro {
+    padding: 1rem .3rem;
+}
+
+
+
+.header__title {
+    text-align: center;
+    color: #F3EED9;
+    text-shadow: 1px 1px 6px rgba(0,0,0);
+    background: #A0A6EF;
+    font-weight: 300;
+    margin: 0;
+    padding: .8rem .3rem;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,.6);
+}
+
+
+
+
+     /* *******  CARDS   ******* */
+.card__container {
+    position: relative;
+
+}
+.card {
+    margin-top: 1rem;
+    position: relative;
+    padding: 1rem;
+    background: #FF9E89;
+    border-radius: 16px;
+
+}
+
+.img {
+
+    border-radius: ;
+    box-shadow: 8px 8px 8px 0px rgba(0,0,0,.6);
+}
+
+.card button {
+    background: none;
+    border: none;
+    padding: .5rem;
+    text-decoration: underline;
+}
+
+.features {
+    position: absolute;
+    z-index: 1;
+    background: #F3EED9;
+    box-shadow: -4px 8px 8px 0px rgba(0,0,0,.6);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.card__list_item {
+    margin-bottom: .8rem;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s ease-in-out;   
+}
+
+
+
+       /* ***** BIGGER SCREENS ***** */
+@media screen and (min-width : 800px) {
+
+    .intro {
+        width: 70%;
+        margin: 0 auto;
+    }
+  
+    .cards__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .card {
+        width: 450px;
+    }
+
+    .card button {
+        text-decoration: none;
+    }
+    
+    .card button:hover {
+        color: #FFF5F1;
+    }
+}
+
+
